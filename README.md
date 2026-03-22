@@ -8,11 +8,19 @@
 </div>
 
 <br/>
-```
-> ⚡ `SYSTEM://` Full Stack Developer. Passionate about intuitive frontends & robust backends.
-> 
-> `STATUS:` **ONLINE** | `LOCATION:` Cambodia 🇰🇭 | `MODE:` Building 🚀
-```
+<div align="center">
+  <table border="0" style="border-collapse: collapse;">
+    <tr>
+      <td align="center">
+        ⚡ <code>SYSTEM://</code> Full Stack Developer. Passionate about intuitive frontends &amp; robust backends.
+        <br/><br/>
+        <code>STATUS:</code> <b>🟢 ONLINE</b> &nbsp;|&nbsp;
+        <code>LOCATION:</code> Cambodia 🇰🇭 &nbsp;|&nbsp;
+        <code>MODE:</code> Building 🚀
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
