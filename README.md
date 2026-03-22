@@ -10,11 +10,11 @@
 <br/>
 
 <div align="center">
-  <p>⚡ <code>SYSTEM://</code> Full Stack Developer — Passionate about intuitive frontends &amp; robust backends.</p>
+  <p><code>SYSTEM://</code> Full Stack Developer — Passionate about intuitive frontends &amp; robust backends.</p>
   <p>
-    <code>STATUS:</code> <b>🟢 ONLINE</b> &nbsp;|&nbsp;
+    <code>STATUS:</code> <b>ONLINE</b> &nbsp;|&nbsp;
     <code>LOCATION:</code> Cambodia 🇰🇭 &nbsp;|&nbsp;
-    <code>MODE:</code> 🚀 Building
+    <code>MODE:</code> Building
   </p>
 </div>
 
@@ -29,15 +29,6 @@
 <br/>
 
 ---
-
-<div align="center">
-```
-╔══════════════════════════════════════════╗
-║         INITIALIZING TECH STACK...       ║
-╚══════════════════════════════════════════╝
-```
-
-</div>
 
 ## `> LANGUAGES.exe`
 
