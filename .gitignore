@@ -1,0 +1,13 @@
+# Binaries
+/sokmean
+/sokmean.exe
+/bin/
+*.exe
+*.test
+*.out
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
