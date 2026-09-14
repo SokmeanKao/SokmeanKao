@@ -1,6 +1,7 @@
 package ui_test
 
 import (
+	"strings"
 	"testing"
 
 	"github.com/SokmeanKao/SokmeanKao/internal/ui"
@@ -48,5 +49,33 @@ func TestPanel_NonEmpty(t *testing.T) {
 	out := ui.Panel("hello", 20, 5)
 	if out == "" {
 		t.Fatal("empty panel")
+	}
+}
+
+func TestHeader_ContainsBrandAndClock(t *testing.T) {
+	out := ui.Header(80, "07:31:00")
+	for _, part := range []string{"SOKMEAN", "ONLINE", "07:31:00"} {
+		if !strings.Contains(out, part) {
+			t.Fatalf("missing %q in %q", part, out)
+		}
+	}
+}
+
+func TestSidebar_HighlightsCursor(t *testing.T) {
+	items := []string{"Dashboard", "Languages"}
+	out := ui.Sidebar(22, 12, 1, items)
+	for _, part := range []string{"NAVIGATION", "Languages"} {
+		if !strings.Contains(out, part) {
+			t.Fatalf("missing %q in %q", part, out)
+		}
+	}
+}
+
+func TestFooter_ShowsKeysAndHint(t *testing.T) {
+	out := ui.Footer(80, "refresh: Phase 2")
+	for _, part := range []string{"navigate", "quit", "refresh: Phase 2"} {
+		if !strings.Contains(out, part) {
+			t.Fatalf("missing %q in %q", part, out)
+		}
 	}
 }
