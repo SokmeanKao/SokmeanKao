@@ -1,6 +1,7 @@
 package app_test
 
 import (
+	"strings"
 	"testing"
 	"time"
 
@@ -118,5 +119,27 @@ func TestUpdate_TickAdvancesNow(t *testing.T) {
 	}
 	if cmd == nil {
 		t.Fatal("expected re-tick cmd")
+	}
+}
+
+func TestView_InitializingAndFrame(t *testing.T) {
+	m := app.New()
+	v := m.View()
+	if !v.AltScreen {
+		t.Fatal("AltScreen must be true")
+	}
+	if v.Content == "" {
+		t.Fatal("empty initializing view")
+	}
+
+	m.Width, m.Height = 80, 24
+	v = m.View()
+	if !v.AltScreen {
+		t.Fatal("AltScreen must be true after size")
+	}
+	for _, part := range []string{"SOKMEAN", "NAVIGATION"} {
+		if !strings.Contains(v.Content, part) {
+			t.Fatalf("missing %q in frame", part)
+		}
 	}
 }
