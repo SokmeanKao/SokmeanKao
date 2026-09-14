@@ -1,9 +1,18 @@
 # Sokmean TUI profile demo — source of truth for assets/sokmean-tui.gif
-# Regenerate: go build -o ./bin/sokmean ./cmd/sokmean && vhs demo.tape
+# Regenerate: see docs/profile-gif.md
+#
+# Linux/macOS:
+#   go build -o ./bin/sokmean ./cmd/sokmean
+#   vhs demo.tape
+#
+# Windows (PowerShell shell + .exe):
+#   go build -o ./bin/sokmean.exe ./cmd/sokmean
+#   # temporarily set: Set Shell "powershell"
+#   # temporarily set: Type "./bin/sokmean.exe"
 
 Output assets/sokmean-tui.gif
 
-Set Shell "bash"
+Set Shell "powershell"
 Set FontSize 16
 Set Width 1200
 Set Height 680
@@ -12,35 +21,27 @@ Set Framerate 24
 Set TypingSpeed 0
 Set Theme "Catppuccin Mocha"
 
-# Launch real binary (build first; on Windows use ./bin/sokmean.exe if needed)
-Type "./bin/sokmean"
+Type "./bin/sokmean.exe"
 Enter
 Sleep 2s
 
-# Languages
 Type "2"
 Sleep 1500ms
 
-# Frameworks
 Type "3"
 Sleep 1500ms
 
-# Tools
 Type "4"
 Sleep 1500ms
 
-# Databases
 Type "5"
 Sleep 1500ms
 
-# GitHub (shows NOT CONNECTED)
 Type "6"
 Sleep 2s
 
-# System
 Type "7"
 Sleep 1500ms
 
-# Return to Dashboard for clean loop
 Type "1"
 Sleep 2s

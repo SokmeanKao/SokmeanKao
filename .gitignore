@@ -6,6 +6,16 @@
 *.test
 *.out
 
+# Recording scratch
+.vhs-build/
+assets/_preview/
+smoke*.gif
+smoke*.tape
+outroot.tape
+frames.tape
+multi.tape
+demo.docker.tape
+
 # IDE / OS
 .idea/
 .vscode/
